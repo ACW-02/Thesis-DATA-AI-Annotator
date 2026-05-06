@@ -115,9 +115,9 @@ with left_col:
     with st.container(border=True):
         st.markdown("<div class='step-title'>🔑 1. Kredensial API</div>", unsafe_allow_html=True)
         if API_KEY:
-            st.success("✅ OpenAI API Key terhubung dari file .env")
+            st.success("✅ OpenAI API Key terhubung")
         else:
-            st.error("❌ OpenAI API Key tidak ditemukan di .env")
+            st.error("❌ OpenAI API Key tidak ditemukan")
 
     # LANGKAH 2: Pilih Model menggunakan Native Border Container
     with st.container(border=True):
