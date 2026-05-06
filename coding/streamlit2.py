@@ -5,13 +5,15 @@ import openai
 import os
 from math import ceil
 import io
-from dotenv import load_dotenv
 
 # ==========================================
-# MEMUAT API KEY DARI ENVIRONMENT (.env)
+# MEMUAT API KEY DARI STREAMLIT SECRETS
 # ==========================================
-load_dotenv() 
-API_KEY = os.getenv("OPENAI_API_KEY")
+# Use st.secrets instead of load_dotenv and os.getenv
+try:
+    API_KEY = st.secrets["OPENAI_API_KEY"]
+except KeyError:
+    API_KEY = None
 
 # ==========================================
 # KONFIGURASI HALAMAN & CSS
