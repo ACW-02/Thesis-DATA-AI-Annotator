@@ -1,0 +1,12 @@
+{
+  "CATEGORY_DEFINITIONS": {
+    "lokasi": "Keluar karena pindah lokasi geografis secara eksplisit (pindah kota, luar kota, luar negeri/relokasi).",
+    "perbedaan_musim_kehidupan": "Keluar karena perubahan fase hidup jangka panjang (menikah, punya anak, jenjang studi baru, perubahan karier besar). Bukan konflik jadwal rutin.",
+    "tidak_ada_respon": "Tidak atau minim respons saat dihubungi, Missing in Action (tidak balas, sulit dihubungi, tidak pernah hadir).",
+    "tertanam_di_gereja_lain": "Memilih tetap tertanam atau aktif di gereja lain, bukan di JPCC.",
+    "waktu_tidak_sesuai": "Benturan jadwal atau komitmen waktu rutin (jam kerja, shift, pulang malam, jadwal kuliah).",
+    "alasan_DATE": "Masalah atau kondisi terkait kelompok DATE (tidak cocok, beda usia, pindah DATE, konflik leader/member, DATE close/bubar).",
+    "Admin": "Kesalahan administratif atau perubahan data yang bukan keputusan pribadi anggota (human error, new comer, probation, false positive).",
+    "others": "Alasan tidak jelas, wafat, terlalu singkat, ambigu, atau tidak termasuk kategori lain."
+  }
+}
