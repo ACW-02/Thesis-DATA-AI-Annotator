@@ -121,17 +121,19 @@ with left_col:
     with st.container(border=True):
         st.markdown("<div class='step-title'>🤖 2. Pemilihan Model</div>", unsafe_allow_html=True)
         model_options = {
-            "GPT-5.5 Nano (Paling Cepat, Eksperimental)": "gpt-4o-mini", # Mengikuti screenshot Anda
-            "GPT-4o (Terbaru, Paling Cerdas)": "gpt-4o",
-            "GPT-4 Turbo": "gpt-4-turbo",
-            "GPT-3.5 Turbo (Legacy)": "gpt-3.5-turbo"
-        }
+        "Gpt-5.5 Nano (Paling Cepat, Eksperimental)": "gpt-5.5-nano",
+        "GPT-5.4 Nano (Paling Cepat, Eksperimental)": "gpt-5.4-nano",
+        "GPT-5.4 Mini (Eksperimental)": "gpt-5.4-mini",
+        "GPT-4o Mini (Terbaru, Cepat & Efisien)": "gpt-4o-mini",
+        "GPT-4o (Terbaru, Paling Cerdas)": "gpt-4o",
+        "GPT-4 Turbo": "gpt-4-turbo",
+        "GPT-3.5 Mini": "gpt-3.5-mini",
+        "GPT-3.5 Turbo (Legacy)": "gpt-3.5-turbo"
+    }
         selected_model_label = st.selectbox("Pilih arsitektur model OpenAI:", list(model_options.keys()))
         active_model = model_options[selected_model_label]
 
-# ----------------- KOLOM KANAN -----------------
-with right_col:
-    # LANGKAH 3: Preset menggunakan Native Border Container
+        # LANGKAH 3: Preset menggunakan Native Border Container
     with st.container(border=True):
         st.markdown("<div class='step-title'>⚙️ 3. Konfigurasi Preset</div>", unsafe_allow_html=True)
         preset_choice = st.selectbox("Pilih Preset Aturan Kategorisasi:", ["DATE Member exit", "+ Add preset"])
@@ -147,6 +149,8 @@ with right_col:
         else:
             st.info("✅ Menggunakan preset bawaan: Evaluasi alasan keluar DATE JPCC.")
 
+# ----------------- KOLOM KANAN -----------------
+with right_col:
     # LANGKAH 4: Upload Data menggunakan Native Border Container
     with st.container(border=True):
         st.markdown("<div class='step-title'>📄 4. Upload Data Mentah</div>", unsafe_allow_html=True)
