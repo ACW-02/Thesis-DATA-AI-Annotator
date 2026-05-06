@@ -123,7 +123,6 @@ with left_col:
     with st.container(border=True):
         st.markdown("<div class='step-title'>🤖 2. Pemilihan Model</div>", unsafe_allow_html=True)
         model_options = {
-        "Gpt-5.5 Nano (Paling Cepat, Eksperimental)": "gpt-5.5-nano",
         "GPT-5.4 Nano (Paling Cepat, Eksperimental)": "gpt-5.4-nano",
         "GPT-5.4 Mini (Eksperimental)": "gpt-5.4-mini",
         "GPT-4o Mini (Terbaru, Cepat & Efisien)": "gpt-4o-mini",
@@ -171,7 +170,7 @@ with right_col:
             with sub_col1:
                 text_col = st.selectbox("Pilih kolom teks:", df.columns.tolist(), index=df.columns.tolist().index("delete_reason") if "delete_reason" in df.columns else 0)
             with sub_col2:
-                user_batch_size = st.number_input("Batch Size:", min_value=1, max_value=50, value=5, step=1)
+                user_batch_size = st.number_input("Batch Size:", min_value=1, max_value=50, value=10, step=1)
 
 # ==========================================
 # TOMBOL EKSEKUSI (LEBAR PENUH)
