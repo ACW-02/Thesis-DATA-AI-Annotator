@@ -170,7 +170,7 @@ with right_col:
             with sub_col1:
                 text_col = st.selectbox("Pilih kolom teks:", df.columns.tolist(), index=df.columns.tolist().index("delete_reason") if "delete_reason" in df.columns else 0)
             with sub_col2:
-                user_batch_size = st.number_input("Batch Size:", min_value=1, max_value=50, value=10, step=1)
+                batch_size = st.number_input(label="Ukuran Batch (Jumlah Baris)", value=10, help="Menentukan berapa banyak baris data yang dikirim dan diproses oleh AI dalam satu waktu untuk mencegah proses terhenti (timeout).")
 
 # ==========================================
 # TOMBOL EKSEKUSI (LEBAR PENUH)
