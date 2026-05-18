@@ -123,8 +123,8 @@ with left_col:
     with st.container(border=True):
         st.markdown("<div class='step-title'>🤖 2. Pemilihan Model</div>", unsafe_allow_html=True)
         model_options = {
-        "GPT-5.4 Nano (Paling Cepat, Eksperimental)": "gpt-5.4-nano",
         "GPT-5.4 Mini (Eksperimental)": "gpt-5.4-mini",
+        "GPT-5.4 Nano (Paling Cepat, Eksperimental)": "gpt-5.4-nano",
         "GPT-4o Mini (Terbaru, Cepat & Efisien)": "gpt-4o-mini",
         "GPT-4o (Terbaru, Paling Cerdas)": "gpt-4o",
         "GPT-4 Turbo": "gpt-4-turbo",
@@ -168,7 +168,7 @@ with right_col:
             
             sub_col1, sub_col2 = st.columns(2)
             with sub_col1:
-                text_col = st.selectbox(label="Kolom Target Analisis", df.columns.tolist(), index=df.columns.tolist().index("delete_reason") if "delete_reason" in df.columns else 0,help="Pilih kolom pada file Excel/CSV Anda yang ingin dianalisis oleh AI.")
+                text_col = st.selectbox("Kolom Target Analisis", df.columns.tolist(), index=df.columns.tolist().index("delete_reason") if "delete_reason" in df.columns else 0, help="Pilih kolom pada file Excel/CSV Anda yang memuat teks narasi/alasan jemaat yang ingin dianalisis oleh AI.")
             with sub_col2:
                 batch_size = st.number_input(label="Ukuran Batch (Jumlah Baris)", value=10, help="Menentukan berapa banyak baris data yang dikirim ke AI dalam satu waktu.\n\n"
          "Panduan Pengaturan:\n"
