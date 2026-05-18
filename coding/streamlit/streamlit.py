@@ -168,9 +168,12 @@ with right_col:
             
             sub_col1, sub_col2 = st.columns(2)
             with sub_col1:
-                text_col = st.selectbox("Pilih kolom teks:", df.columns.tolist(), index=df.columns.tolist().index("delete_reason") if "delete_reason" in df.columns else 0)
+                text_col = st.selectbox(label="Kolom Target Analisis", df.columns.tolist(), index=df.columns.tolist().index("delete_reason") if "delete_reason" in df.columns else 0,help="Pilih kolom pada file Excel/CSV Anda yang ingin dianalisis oleh AI.")
             with sub_col2:
-                batch_size = st.number_input(label="Ukuran Batch (Jumlah Baris)", value=10, help="Menentukan berapa banyak baris data yang dikirim dan diproses oleh AI dalam satu waktu untuk mencegah proses terhenti (timeout).")
+                batch_size = st.number_input(label="Ukuran Batch (Jumlah Baris)", value=10, help="Menentukan berapa banyak baris data yang dikirim ke AI dalam satu waktu.\n\n"
+         "Panduan Pengaturan:\n"
+         "⬇️ Angka Kecil (5-10): Lebih stabil dan anti-error (timeout). Gunakan jika teks panjang-panjang.\n"
+         "⬆️ Angka Besar (50-100): Lebih cepat selesai. Gunakan hanya jika teks pendek-pendek dan koneksi lancar.")
 
 # ==========================================
 # TOMBOL EKSEKUSI (LEBAR PENUH)
