@@ -173,7 +173,7 @@ with right_col:
                 user_batch_size = st.number_input(label="Ukuran Batch (Jumlah Baris)", value=10, help="Menentukan berapa banyak baris data yang dikirim ke AI dalam satu waktu.\n\n"
          "Panduan Pengaturan:\n"
          "⬇️ Angka Kecil (5-10): Lebih stabil dan anti-error (timeout). Gunakan jika teks panjang-panjang.\n"
-         "⬆️ Angka Besar (50-100): Lebih cepat selesai. Gunakan hanya jika teks pendek-pendek dan koneksi lancar.", user)
+         "⬆️ Angka Besar (50-100): Lebih cepat selesai. Gunakan hanya jika teks pendek-pendek dan koneksi lancar.")
 
 # ==========================================
 # TOMBOL EKSEKUSI (LEBAR PENUH)
