@@ -50,7 +50,6 @@ DATE_CATEGORIES = {
     "tidak_ada_respon": "Anggota tidak atau minim memberikan respons saat dihubungi.",
     "waktu_tidak_sesuai": "Benturan jadwal atau komitmen waktu rutin (jam kerja/kuliah).",
     "tertanam_di_gereja_lain": "Memilih untuk tetap tertanam atau beribadah di gereja lain.",
-    "perbedaan_umur": "Ketidaksesuaian akibat perbedaan rentang usia di kelompok.",
     "alasan_DATE": "Dinamika internal DATE (ketidakcocokan, konflik, DATE bubar).",
     "others": "Alasan ambigu, terlalu singkat, wafat, atau tidak jelas."
 }
