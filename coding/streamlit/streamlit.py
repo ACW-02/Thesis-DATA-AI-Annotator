@@ -120,7 +120,7 @@ with left_col:
 
     # LANGKAH 2: Pilih Model menggunakan Native Border Container
     with st.container(border=True):
-        st.markdown("<div class='step-title'>🤖 2. Arsitektur Model OpenAI: GPT-5.4 Mini </div>", unsafe_allow_html=True)
+        st.markdown("<div class='step-title'> 🤖 2. Arsitektur Model OpenAI: GPT-5.4 Mini </div>", unsafe_allow_html=True)
     #     model_options = {
     #     "GPT-5.4 Mini (Eksperimental)": "gpt-5.4-mini",
     #     "GPT-5.4 Nano (Paling Cepat, Eksperimental)": "gpt-5.4-nano",
