@@ -120,7 +120,7 @@ with left_col:
 
     # LANGKAH 2: Pilih Model menggunakan Native Border Container
     with st.container(border=True):
-        st.markdown("<div class='step-title'>🤖 Arsitektur Model OpenAI: GPT-5.4 Mini </div>", unsafe_allow_html=True)
+        st.markdown("<div class='step-title'>🤖 2. Arsitektur Model OpenAI: GPT-5.4 Mini </div>", unsafe_allow_html=True)
     #     model_options = {
     #     "GPT-5.4 Mini (Eksperimental)": "gpt-5.4-mini",
     #     "GPT-5.4 Nano (Paling Cepat, Eksperimental)": "gpt-5.4-nano",
@@ -137,18 +137,21 @@ with left_col:
         # LANGKAH 3: Preset menggunakan Native Border Container
     with st.container(border=True):
         st.markdown("<div class='step-title'>⚙️ 3. Konfigurasi Preset</div>", unsafe_allow_html=True)
-        preset_choice = st.selectbox("Pilih Preset Aturan Kategorisasi:", ["DATE Member exit", "+ Add preset"])
-        custom_preset_data = None
-        if preset_choice == "+ Add preset":
-            json_file = st.file_uploader("Upload Preset Label (JSON)", type=["json"])
-            if json_file:
-                try:
-                    custom_preset_data = json.load(json_file)
-                    st.success("✅ Preset kustom berhasil dimuat!")
-                except Exception as e:
-                    st.error(f"❌ Gagal membaca JSON: {e}")
-        else:
-            st.info("✅ Menggunakan preset bawaan: Evaluasi alasan keluar DATE JPCC.")
+
+        # Hanya menyediakan 1 pilihan baku (hardcoded)
+        preset_choice = st.selectbox(
+            "Pilih Preset Aturan Kategorisasi:",
+            ["DATE Member exit"]
+        )
+        
+        # Menampilkan notifikasi sukses secara langsung
+        if preset_choice == "DATE Member exit":
+            st.success("Menggunakan preset bawaan: Evaluasi alasan keluar DATE JPCC.")
+            
+            # Gunakan variabel preset bawaan yang sudah bersih (8 Kategori)
+            selected_categories = DATE_CATEGORIES
+            selected_rules = DATE_RULES
+            selected_sys_prompt = DATE_SYS_PROMPT
 
 # ----------------- KOLOM KANAN -----------------
 with right_col:
