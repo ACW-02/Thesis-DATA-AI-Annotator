@@ -120,18 +120,19 @@ with left_col:
 
     # LANGKAH 2: Pilih Model menggunakan Native Border Container
     with st.container(border=True):
-        st.markdown("<div class='step-title'>🤖 2. Pemilihan Model</div>", unsafe_allow_html=True)
-        model_options = {
-        "GPT-5.4 Mini (Eksperimental)": "gpt-5.4-mini",
-        "GPT-5.4 Nano (Paling Cepat, Eksperimental)": "gpt-5.4-nano",
-        "GPT-4o Mini (Terbaru, Cepat & Efisien)": "gpt-4o-mini",
-        "GPT-4o (Terbaru, Paling Cerdas)": "gpt-4o",
-        "GPT-4 Turbo": "gpt-4-turbo",
-        "GPT-3.5 Mini": "gpt-3.5-mini",
-        "GPT-3.5 Turbo (Legacy)": "gpt-3.5-turbo"
-    }
-        selected_model_label = st.selectbox("Pilih arsitektur model OpenAI:", list(model_options.keys()))
-        active_model = model_options[selected_model_label]
+        st.markdown("<div class='step-title'>🤖 Arsitektur Model OpenAI: GPT-5.4 Mini </div>", unsafe_allow_html=True)
+    #     model_options = {
+    #     "GPT-5.4 Mini (Eksperimental)": "gpt-5.4-mini",
+    #     "GPT-5.4 Nano (Paling Cepat, Eksperimental)": "gpt-5.4-nano",
+    #     "GPT-4o Mini (Terbaru, Cepat & Efisien)": "gpt-4o-mini",
+    #     "GPT-4o (Terbaru, Paling Cerdas)": "gpt-4o",
+    #     "GPT-4 Turbo": "gpt-4-turbo",
+    #     "GPT-3.5 Mini": "gpt-3.5-mini",
+    #     "GPT-3.5 Turbo (Legacy)": "gpt-3.5-turbo"
+    # }
+
+        # selected_model_label = st.selectbox("Pilih arsitektur model OpenAI:", list(model_options.keys()))
+        # active_model = model_options[selected_model_label]
 
         # LANGKAH 3: Preset menggunakan Native Border Container
     with st.container(border=True):
