@@ -122,6 +122,7 @@ with left_col:
     with st.container(border=True):
         st.markdown("<div class='step-title'>  🌐 2. Arsitektur Model </div>", unsafe_allow_html=True)
         st.info("Arsitektur Model OpenAI: GPT-5.4 Mini")
+        active_model = model_options["gpt-5.4-mini"]
     #     model_options = {
     #     "GPT-5.4 Mini (Eksperimental)": "gpt-5.4-mini",
     #     "GPT-5.4 Nano (Paling Cepat, Eksperimental)": "gpt-5.4-nano",
@@ -134,6 +135,7 @@ with left_col:
 
         # selected_model_label = st.selectbox("Pilih arsitektur model OpenAI:", list(model_options.keys()))
         # active_model = model_options[selected_model_label]
+        
 
         # LANGKAH 3: Preset menggunakan Native Border Container
     with st.container(border=True):
