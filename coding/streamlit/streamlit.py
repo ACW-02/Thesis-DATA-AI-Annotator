@@ -144,12 +144,12 @@ with left_col:
         # Hanya menyediakan 1 pilihan baku (hardcoded)
         preset_choice = st.selectbox(
             "Pilih Preset Aturan Kategorisasi:",
-            ["DATE Member exit"]
+            ["Member exit"]
         )
         
         # Menampilkan notifikasi sukses secara langsung
-        if preset_choice == "DATE Member exit":
-            st.success("Menggunakan preset bawaan: Evaluasi alasan keluar DATE JPCC.")
+        if preset_choice == "Member exit":
+            st.success("Menggunakan preset bawaan: Evaluasi alasan keluar Member.")
             
             # Gunakan variabel preset bawaan yang sudah bersih (8 Kategori)
             selected_categories = DATE_CATEGORIES
