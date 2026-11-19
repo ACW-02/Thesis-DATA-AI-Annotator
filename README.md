@@ -1,6 +1,8 @@
 # Thesis-DATA-AI-Annotator
 This is my thesis project, building an AI Annotator for Remarks regarding small group member exit reasons. 
 
+streamlit app : https://thesis-data-ai-annotator.streamlit.app
+
 
 paper title : "Automated Text Classification of Small Group Dropout Reasons Using Zero-Shot Large Language Models"
 
