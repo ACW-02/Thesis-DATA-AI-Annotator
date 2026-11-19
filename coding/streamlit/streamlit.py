@@ -195,7 +195,7 @@ if st.button("🚀 Mulai Anotasi Sekarang", use_container_width=True):
         with st.status(f"Menganotasi data Anda menggunakan **{active_model}**...", expanded=True) as status:
             try:
                 # 1. Setup Preset
-                if preset_choice == "DATE Member exit":
+                if preset_choice == "Member exit":
                     cat_dict = DATE_CATEGORIES
                     sys_pr = DATE_SYS_PROMPT
                     rules_pr = DATE_RULES
